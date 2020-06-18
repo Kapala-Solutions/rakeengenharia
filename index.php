@@ -5,24 +5,20 @@
     <title>Rake Engenharia</title>
   </head>
   <body>
-    <?php
 
-  // Store the file name into variable
-  $file = 'Institucional.pdf';
-  $filename = 'Institucional.pdf'; 
+  <?php
+
+  // The location of the PDF file
+  // on the server
+  $filename = "Institucional.pdf"; 
 
   // Header content type
-  header('Content-type: application/pdf');
+  header("Content-type: application/pdf");
 
-  header('Content-Disposition: inline; filename="' . $filename . '"');
+  header("Content-Length: " . filesize($filename));
 
-  header('Content-Transfer-Encoding: binary');
-
-  header('Accept-Ranges: bytes');
-
-  // Read the file
-  @readfile($file);
-
+  // Send the file to the browser.
+  readfile($filename);
   ?>
   </body>
 </html>
