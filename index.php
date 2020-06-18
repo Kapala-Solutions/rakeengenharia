@@ -5,7 +5,24 @@
     <title>Rake Engenharia</title>
   </head>
   <body>
-  <embed src="Institucional.pdf" type="application/pdf" width="100%" height="600px" />
- Hello Word
+    <?php
+
+  // Store the file name into variable
+  $file = 'Institucional.pdf';
+  $filename = 'Institucional.pdf'; 
+
+  // Header content type
+  header('Content-type: application/pdf');
+
+  header('Content-Disposition: inline; filename="' . $filename . '"');
+
+  header('Content-Transfer-Encoding: binary');
+
+  header('Accept-Ranges: bytes');
+
+  // Read the file
+  @readfile($file);
+
+  ?>
   </body>
 </html>
