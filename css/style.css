@@ -414,13 +414,13 @@ h6 { font-size: 16px; }
 .arlo_tm_hero .background .image{
 	position: absolute;
 	/* top: 0px; */
-	top: -160px;
+	top: 145px;
 	bottom: 0px;
 	left: 0px;
 	right: 0px;
 	background-repeat: no-repeat;
 	/* background-size: cover; */
-	background-position: center;
+	background-position: top;
 }
 .arlo_tm_hero .background .overlay{
 	position: absolute;
@@ -739,7 +739,8 @@ h6 { font-size: 16px; }
 .arlo_tm_services .service_inner ul li{
 	margin: 0px 0px 50px 0px;
 	float: left;
-	width: 33.3333%;
+	/* width: 33.3333%; 3 grid*/
+	width: 50%; /* 2 grid */
 	padding-left: 50px;
 }
 .arlo_tm_services .service_inner ul li .inner{
