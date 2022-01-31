@@ -414,7 +414,7 @@ h6 { font-size: 16px; }
 .arlo_tm_hero .background .image{
 	position: absolute;
 	/* top: 0px; */
-	top: 145px;
+	top: 0px;
 	bottom: 0px;
 	left: 0px;
 	right: 0px;
