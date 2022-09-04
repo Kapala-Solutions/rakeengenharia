@@ -536,15 +536,22 @@ h6 { font-size: 16px; }
 	height: auto;
 	clear: both;
 	float: left;
-	margin-bottom: 150px;
-	padding-top: 140px;
+	margin-bottom: 0px;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	background-color: #f9f9f9;
 }
 .arlo_tm_about .about_inner{
 	width: 100%;
 	height: auto;
 	clear: both;
 	display: flex;
-	padding-top: 100px;
+	padding-top: 50px;
+}
+.arlo_tm_about .about_inner .text{
+	font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
 }
 .arlo_tm_main_title{
 	width: 100%;
@@ -565,7 +572,7 @@ h6 { font-size: 16px; }
 	font-weight: 800;
 }
 .arlo_tm_about .left{
-	width: 35%;
+	width: 100%;
 	float: left;
 	height: auto;
 }
@@ -627,14 +634,14 @@ h6 { font-size: 16px; }
 }
 .arlo_tm_about .about_short_contact_wrap ul{
 	margin: 0px;
-	list-style-type: none;
+	list-style-type: disclosure-closed;
 }
 .arlo_tm_about .about_short_contact_wrap ul li{
-	margin: 0px 0px 10px 0px;
-	width: 50%;
+	margin: 0px 0px 0px 30px;
+	width: 100%;
 	float: left;
 	position: relative;
-	padding-left: 30px;
+	padding-left: 0px;
 }
 .arlo_tm_about .about_short_contact_wrap ul li:nth-of-type(2n){clear: right;}
 .arlo_tm_about ul li label{
@@ -719,14 +726,14 @@ h6 { font-size: 16px; }
 	clear: both;
 	float: left;
 	background-color: #f9f9f9;
-	padding: 140px 0px 138px 0px;
+	padding: 50px 0px 20px 0px;
 }
 .arlo_tm_services .service_inner{
 	width: 100%;
 	height: auto;
 	clear: both;
 	float: left;
-	padding-top: 90px;
+	padding-top: 0px;
 }
 .arlo_tm_services .service_inner ul{
 	margin: 0px 0px 0px -50px;
@@ -734,7 +741,7 @@ h6 { font-size: 16px; }
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	margin-bottom: 38px;
+	margin-bottom: 0px;
 }
 .arlo_tm_services .service_inner ul li{
 	margin: 0px 0px 50px 0px;
@@ -749,7 +756,7 @@ h6 { font-size: 16px; }
 	clear: both;
 	float: left;
 	position: relative;
-	box-shadow: 0px 0px 20px rgba(0,0,0,.09);
+	box-shadow: 0px 0px 20px rgba(0,0,0,.6);
 	padding: 60px 40px 53px 40px;
 	background-color: #fff;
 	
@@ -825,8 +832,8 @@ h6 { font-size: 16px; }
 	height: auto;
 	clear: both;
 	float: left;
-	margin-bottom: 100px;
-	padding-top: 141px;
+	margin-bottom: 20px;
+	padding-top: 50px;
 }
 .arlo_tm_portfolio .portfolio_inner{
 	width: 100%;
@@ -1025,7 +1032,7 @@ h6 { font-size: 16px; }
 	clear: both;
 	float: left;
 	background-color: #f9f9f9;
-	padding: 140px 0px 90px 0px;
+	padding: 30px 0px 30px 0px;
 }
 .arlo_tm_news .news_list{
 	width: 100%;
@@ -1355,7 +1362,7 @@ body.modal{
 	height: auto;
 	clear: both;
 	float: left;
-	padding: 140px 0px 140px 0px;
+	padding: 50px 0px 50px 0px;
 }
 .arlo_tm_contact .contact_inner{
 	width: 100%;
@@ -1373,7 +1380,10 @@ body.modal{
 .arlo_tm_contact .desc{
 	max-width: 50%;
 	float: left;
-	padding-top: 73px;
+	padding-top: 10px;
+}
+.arlo_tm_contact .desc a{
+	font-size: 20px;
 }
 .arlo_tm_contact .contact_inner .left{
 	width: 50%;
@@ -1458,7 +1468,7 @@ body.modal{
 	clear: both;
 	float: left;
 	background-color: #000;
-	padding: 80px 0px;
+	padding: 30px 0px;
 }
 .arlo_tm_copyright .inner{
 	width: 100%;
@@ -1653,7 +1663,7 @@ body.modal{
 	top: 0px;
 	left: 0px;
 	bottom: 0px;
-	background-color: rgb(91, 96, 146);
+	background-color: rgb(0, 153, 204);
 	z-index: 3;
 	box-shadow: 0 0 30px rgba(0,34,69,0.05);
 	
@@ -1841,15 +1851,28 @@ body.modal{
 
 .float{
 	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
+	width:72px;
+	height:72px;
+	bottom:7px;
 	right:40px;
-	color:#FFF;
-	border-radius:50px;
+	color:#000;
+	border-radius:10px;
 	text-align:center;
+	box-shadow: 0px 0px 20px rgb(0 0 0 / 40%);
+	background-color: #45c655;
+	z-index: 9999;
 }
 
 .my-float{
-	margin-top:22px;
+	margin: 12px;
+}
+
+.inner-header {
+	text-align: center;
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
